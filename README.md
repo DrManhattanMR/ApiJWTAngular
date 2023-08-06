@@ -2,6 +2,8 @@
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 15.0.2.
 
+LoginTemplate connect to REST API net core and jwt token
+link to rest api repository https://github.com/DrManhattanMR/RestApiDapperMysqlJWT.git
 ## Development server
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.

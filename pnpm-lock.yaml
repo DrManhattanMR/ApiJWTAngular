@@ -29,6 +29,15 @@ dependencies:
   '@angular/router':
     specifier: ^15.0.0
     version: 15.0.0(@angular/common@15.0.0)(@angular/core@15.0.0)(@angular/platform-browser@15.0.0)(rxjs@7.5.0)
+  bootstrap:
+    specifier: 5.3.1
+    version: 5.3.1(@popperjs/core@2.11.8)
+  primeicons:
+    specifier: ^6.0.1
+    version: 6.0.1
+  primeng:
+    specifier: 15.4.7-lts
+    version: 15.4.7-lts(@angular/common@15.0.0)(@angular/core@15.0.0)(@angular/forms@15.0.0)(rxjs@7.5.0)(zone.js@0.12.0)
   rxjs:
     specifier: ~7.5.0
     version: 7.5.0
@@ -1838,6 +1847,10 @@ packages:
     dev: true
     optional: true
 
+  /@popperjs/core@2.11.8:
+    resolution: {integrity: sha512-P1st0aksCrn9sGZhp8GMYwBnQsbvAWsZAX44oXNNvLHGqAOcoVxmjZiohstwQ7SqKnbR47akdNi+uleWD8+g6A==}
+    dev: false
+
   /@schematics/angular@15.0.2:
     resolution: {integrity: sha512-h5vTcOkJD0s+BMHRI87fVyKB+A/YqFolR7fhmhETTq2NwRg2oR0HTf7DbjVxPBwhvI5XzUV1MBPb30xXR2UG0w==}
     engines: {node: ^14.20.0 || ^16.13.0 || >=18.10.0, npm: ^6.11.0 || ^7.5.6 || >=8.0.0, yarn: '>= 1.13.0'}
@@ -2500,6 +2513,14 @@ packages:
   /boolbase@1.0.0:
     resolution: {integrity: sha512-JZOSA7Mo9sNGB8+UjSgzdLtokWAky1zbztM3WRLCbZ70/3cTANmQmOdR7y2g+J0e2WXywy1yS468tY+IruqEww==}
     dev: true
+
+  /bootstrap@5.3.1(@popperjs/core@2.11.8):
+    resolution: {integrity: sha512-jzwza3Yagduci2x0rr9MeFSORjcHpt0lRZukZPZQJT1Dth5qzV7XcgGqYzi39KGAVYR8QEDVoO0ubFKOxzMG+g==}
+    peerDependencies:
+      '@popperjs/core': ^2.11.8
+    dependencies:
+      '@popperjs/core': 2.11.8
+    dev: false
 
   /brace-expansion@1.1.11:
     resolution: {integrity: sha512-iCuPHDFgrHX7H2vEI/5xpz07zSHB00TpugqhmYtVmMO6518mCuRMoOYFldEBl0g187ufozdaHgWKcYFb61qGiA==}
@@ -4493,7 +4514,7 @@ packages:
     dependencies:
       copy-anything: 2.0.6
       parse-node-version: 1.0.1
-      tslib: 2.3.0
+      tslib: 2.4.1
     optionalDependencies:
       errno: 0.1.8
       graceful-fs: 4.2.11
@@ -5403,6 +5424,27 @@ packages:
     engines: {node: '>=6'}
     dev: true
 
+  /primeicons@6.0.1:
+    resolution: {integrity: sha512-KDeO94CbWI4pKsPnYpA1FPjo79EsY9I+M8ywoPBSf9XMXoe/0crjbUK7jcQEDHuc0ZMRIZsxH3TYLv4TUtHmAA==}
+    dev: false
+
+  /primeng@15.4.7-lts(@angular/common@15.0.0)(@angular/core@15.0.0)(@angular/forms@15.0.0)(rxjs@7.5.0)(zone.js@0.12.0):
+    resolution: {integrity: sha512-lNXh7oKYd77fhg5hoWN8synK/soC08oLFnjGcCB0VPFwqlY8+1yvgKgo9smxRcpJ+LsChCGco+ixD3g/YdaFPw==}
+    peerDependencies:
+      '@angular/common': ^15.2.1
+      '@angular/core': ^15.2.1
+      '@angular/forms': ^15.2.1
+      rxjs: ^6.0.0 || ^7.5.0
+      zone.js: ^0.10.2 || ^0.11.0 || ^0.12.0 || ^0.13.0
+    dependencies:
+      '@angular/common': 15.0.0(@angular/core@15.0.0)(rxjs@7.5.0)
+      '@angular/core': 15.0.0(rxjs@7.5.0)(zone.js@0.12.0)
+      '@angular/forms': 15.0.0(@angular/common@15.0.0)(@angular/core@15.0.0)(@angular/platform-browser@15.0.0)(rxjs@7.5.0)
+      rxjs: 7.5.0
+      tslib: 2.4.1
+      zone.js: 0.12.0
+    dev: false
+
   /proc-log@2.0.1:
     resolution: {integrity: sha512-Kcmo2FhfDTXdcbfDH76N7uBYHINxc/8GW7UAVuVP9I+Va3uHSerrnKV6dLooga/gh7GlgzuCCr/eoldnL1muGw==}
     engines: {node: ^12.13.0 || ^14.15.0 || >=16.0.0}
@@ -5706,7 +5748,7 @@ packages:
   /rxjs@7.5.7:
     resolution: {integrity: sha512-z9MzKh/UcOqB3i20H6rtrlaE/CgjLOvheWK/9ILrbhROGTweAi1BaFsTT9FbwZi5Trr1qNRs+MXkhmR06awzQA==}
     dependencies:
-      tslib: 2.3.0
+      tslib: 2.4.1
     dev: true
 
   /safe-buffer@5.1.2:
@@ -6322,7 +6364,6 @@ packages:
 
   /tslib@2.4.1:
     resolution: {integrity: sha512-tGyy4dAjRIEwI7BzsB0lynWgOpfqjUdq91XXAlIWD2OwKBH7oCl/GZG/HT4BOHrTlPMOASlMQ7veyTqpmRcrNA==}
-    dev: true
 
   /type-fest@0.21.3:
     resolution: {integrity: sha512-t0rzBq87m3fVcduHDUFhKmyyX+9eo6WQjZvf51Ea/M0Q7+T374Jp1aUiyUl0GKxp8M/OETVHSDvmkyPgvX+X2w==}
