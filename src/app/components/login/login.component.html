@@ -1,11 +1,25 @@
 <div class="d-flex align-items-center justify-content-center vh-100">
   <div class="card shadow p-4">
     <div class="card-body">
-      <h5 class="card-title">Bienvenido Boilerplate</h5>
-      <p class="card-text">Este es un boilerplate login rest api mysql, sequalize, netcore, n capas. repositorio <br>
-        https://github.com/DrManhattanMR/RestApiDapperMysqlJWT.git
-        .</p>
-
+      <p-card header="Bienvenido Boilerplate" subheader="Este es un boilerplate login rest api mysql, sequalize, netcore, n capas." [style]="{ width: '360px' }">
+        <p>
+          Repositorio backend => https://github.com/DrManhattanMR/RestApiDapperMysqlJWT.git
+        </p>
+        <div class="col-12">
+          <div class="mb-3">
+            <label class="form-label">Username</label>
+            <input type="text" class="form-control" placeholder="manucho" [(ngModel)]="Usuario.username">
+          </div>
+        </div><div class="col-12">
+          <div class="mb-3">
+            <label class="form-label">Password</label>
+            <input type="password" class="form-control"  placeholder="admin" [(ngModel)]="Usuario.password">
+          </div>
+        </div>
+        <ng-template pTemplate="footer">
+          <p-button label="Iniciar Sesion" icon="pi pi-check" (click)="Login()"></p-button>
+        </ng-template>
+      </p-card>
     </div>
   </div>
 </div>

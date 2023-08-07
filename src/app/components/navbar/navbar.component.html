@@ -1,0 +1,65 @@
+<nav class="navbar navbar-expand-lg bg-body-tertiary sticky-top" style="background-color: #D5DAF9;">
+  <div class="container-fluid">
+
+    <a class="navbar-brand" href="/home">
+      <small
+        class="d-inline-flex mb-3 px-2 py-1 fw-semibold text-primary bg-primary bg-opacity-10 border border-primary border-opacity-10 rounded-2"
+        style="color: #001c64!important;">
+        boilerplate</small>
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0 gap-2">
+        <li class="nav-item">
+          <p-button label="Proveedores" (onClick)="globales.GotoPage('/proveedor','')" icon="pi pi-id-card"
+                    data-bs-toggle="collapse" data-bs-target=".navbar-collapse.show"
+                    *ngIf="globales.isUserLoggedIn"
+                    styleClass="p-button-sm p-button-text"></p-button>
+        </li>
+        <li class="nav-item">
+          <p-button label="Categorias" (onClick)="globales.GotoPage('/categoria','')" icon="pi pi-microsoft"
+                    data-bs-toggle="collapse" data-bs-target=".navbar-collapse.show"
+                    *ngIf="globales.isUserLoggedIn"
+                    styleClass="p-button-sm p-button-text"></p-button>
+        </li>
+        <li class="nav-item">
+          <p-button label="Venta" (onClick)="globales.GotoPage('/venta','')" icon="pi pi-print"
+                    data-bs-toggle="collapse" data-bs-target=".navbar-collapse.show"
+                    *ngIf="globales.isUserLoggedIn"
+                    styleClass="p-button-sm p-button-text"></p-button>
+        </li>
+        <li class="nav-item">
+          <p-button label="Ventas" (onClick)="globales.GotoPage('/ventas','')" icon="pi pi-chart-bar"
+                    data-bs-toggle="collapse" data-bs-target=".navbar-collapse.show"
+                    *ngIf="globales.isUserLoggedIn"
+                    styleClass="p-button-sm p-button-text"></p-button>
+        </li>
+        <li class="nav-item">
+          <p-button label="Gastos" (onClick)="globales.GotoPage('/gastos','')" icon="pi pi-chart-line"
+                    data-bs-toggle="collapse" data-bs-target=".navbar-collapse.show"
+                    *ngIf="globales.isUserLoggedIn"
+                    styleClass="p-button-sm p-button-text"></p-button>
+        </li><li class="nav-item">
+        <p-button label="Usuarios" (onClick)="globales.GotoPage('/usuarios','')" icon="pi pi-users"
+                  data-bs-toggle="collapse" data-bs-target=".navbar-collapse.show"
+                  *ngIf="globales.isUserLoggedIn"
+                  styleClass="p-button-sm p-button-text"></p-button>
+      </li>
+      </ul>
+      <div class="d-flex">
+        <p-button label="Ingresar"
+                  data-bs-toggle="collapse" data-bs-target=".navbar-collapse.show"
+                  *ngIf="!globales.isUserLoggedIn" (onClick)="globales.GotoPage('/login','')" icon="pi pi-sign-in"
+                  styleClass="p-button-success p-button-sm"></p-button>
+        <p-button label="Salir" (onClick)="globales.closeSession()"
+                  data-bs-toggle="collapse" data-bs-target=".navbar-collapse.show"
+                  *ngIf="globales.isUserLoggedIn"
+                  icon="pi pi-sign-out"
+                  styleClass="p-button-danger p-button-sm"></p-button>
+      </div>
+    </div>
+  </div>
+</nav>
