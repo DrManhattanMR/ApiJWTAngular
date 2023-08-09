@@ -1,4 +1,15 @@
+<app-navbar />
+<div class="container" *ngIf="globales.isUserLoggedIn">
+  <div class="d-flex flex-row-reverse">
+    <a [routerLink]="'/profile'">
+      <h6 class="text-primary p-3" style="color: #001c64!important; font-weight: bold">
+        Hola! 😇 {{globales.NombreCompleto}}</h6>
+    </a>
+  </div>
+</div>
 <div class="container-fluid">
+  <p-toast></p-toast>
+  <p-progressBar *ngIf="globales.progress" mode="indeterminate" [style]="{'height': '10px'}"></p-progressBar>
   <router-outlet></router-outlet>
 </div>
 

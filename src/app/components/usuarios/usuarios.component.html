@@ -1,0 +1,33 @@
+<div class="container">
+  <div class="card">
+    <div class="card-body">
+      <h5 class="card-title">Usuarios</h5>
+      <div class="card">
+        <p-table [value]="ListaUsuario" [tableStyle]="{'min-width': '50rem'}">
+          <ng-template pTemplate="header" let-columns>
+            <tr>
+              <th>Nombre </th>
+              <th>Username</th>
+              <th>Correo</th>
+              <th>Telefono</th>
+              <th>Direccion</th>
+              <th>Rol</th>
+              <th>Activo</th>
+            </tr>
+          </ng-template>
+          <ng-template pTemplate="body" let-usuario let-columns="columns">
+            <tr>
+              <td>{{usuario.nombre}} {{usuario.apellidos}}</td>
+              <td>{{usuario.username}}</td>
+              <td>{{usuario.correo}}</td>
+              <td>{{usuario.telefono}}</td>
+              <td>{{usuario.direccion}}</td>
+              <td>{{usuario.role}}</td>
+              <td>{{usuario.active}}</td>
+            </tr>
+          </ng-template>
+        </p-table>
+      </div>
+    </div>
+  </div>
+</div>

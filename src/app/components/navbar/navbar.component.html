@@ -14,35 +14,13 @@
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav me-auto mb-2 mb-lg-0 gap-2">
         <li class="nav-item">
-          <p-button label="Proveedores" (onClick)="globales.GotoPage('/proveedor','')" icon="pi pi-id-card"
+          <p-button label="Roles" (onClick)="globales.GotoPage('/roles','')" icon="pi pi-microsoft"
                     data-bs-toggle="collapse" data-bs-target=".navbar-collapse.show"
                     *ngIf="globales.isUserLoggedIn"
                     styleClass="p-button-sm p-button-text"></p-button>
         </li>
+
         <li class="nav-item">
-          <p-button label="Categorias" (onClick)="globales.GotoPage('/categoria','')" icon="pi pi-microsoft"
-                    data-bs-toggle="collapse" data-bs-target=".navbar-collapse.show"
-                    *ngIf="globales.isUserLoggedIn"
-                    styleClass="p-button-sm p-button-text"></p-button>
-        </li>
-        <li class="nav-item">
-          <p-button label="Venta" (onClick)="globales.GotoPage('/venta','')" icon="pi pi-print"
-                    data-bs-toggle="collapse" data-bs-target=".navbar-collapse.show"
-                    *ngIf="globales.isUserLoggedIn"
-                    styleClass="p-button-sm p-button-text"></p-button>
-        </li>
-        <li class="nav-item">
-          <p-button label="Ventas" (onClick)="globales.GotoPage('/ventas','')" icon="pi pi-chart-bar"
-                    data-bs-toggle="collapse" data-bs-target=".navbar-collapse.show"
-                    *ngIf="globales.isUserLoggedIn"
-                    styleClass="p-button-sm p-button-text"></p-button>
-        </li>
-        <li class="nav-item">
-          <p-button label="Gastos" (onClick)="globales.GotoPage('/gastos','')" icon="pi pi-chart-line"
-                    data-bs-toggle="collapse" data-bs-target=".navbar-collapse.show"
-                    *ngIf="globales.isUserLoggedIn"
-                    styleClass="p-button-sm p-button-text"></p-button>
-        </li><li class="nav-item">
         <p-button label="Usuarios" (onClick)="globales.GotoPage('/usuarios','')" icon="pi pi-users"
                   data-bs-toggle="collapse" data-bs-target=".navbar-collapse.show"
                   *ngIf="globales.isUserLoggedIn"

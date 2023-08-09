@@ -36,8 +36,8 @@ dependencies:
     specifier: ^6.0.1
     version: 6.0.1
   primeng:
-    specifier: 15.4.7-lts
-    version: 15.4.7-lts(@angular/common@16.1.8)(@angular/core@16.1.8)(@angular/forms@16.1.8)(rxjs@7.5.0)(zone.js@0.13.1)
+    specifier: 16.1.0
+    version: 16.1.0(@angular/common@16.1.8)(@angular/core@16.1.8)(@angular/forms@16.1.8)(rxjs@7.5.0)(zone.js@0.13.1)
   rxjs:
     specifier: ~7.5.0
     version: 7.5.0
@@ -5477,20 +5477,20 @@ packages:
     resolution: {integrity: sha512-KDeO94CbWI4pKsPnYpA1FPjo79EsY9I+M8ywoPBSf9XMXoe/0crjbUK7jcQEDHuc0ZMRIZsxH3TYLv4TUtHmAA==}
     dev: false
 
-  /primeng@15.4.7-lts(@angular/common@16.1.8)(@angular/core@16.1.8)(@angular/forms@16.1.8)(rxjs@7.5.0)(zone.js@0.13.1):
-    resolution: {integrity: sha512-lNXh7oKYd77fhg5hoWN8synK/soC08oLFnjGcCB0VPFwqlY8+1yvgKgo9smxRcpJ+LsChCGco+ixD3g/YdaFPw==}
+  /primeng@16.1.0(@angular/common@16.1.8)(@angular/core@16.1.8)(@angular/forms@16.1.8)(rxjs@7.5.0)(zone.js@0.13.1):
+    resolution: {integrity: sha512-qqYQ2xO6EmiBEqvlKHIWJPrC90HVVQGitnrGurpdT9f8/Mkz0YCCo4GwLElKyHZ52STd+cw2MtoXa1sJRVR30g==}
     peerDependencies:
-      '@angular/common': ^15.2.1
-      '@angular/core': ^15.2.1
-      '@angular/forms': ^15.2.1
-      rxjs: ^6.0.0 || ^7.5.0
-      zone.js: ^0.10.2 || ^0.11.0 || ^0.12.0 || ^0.13.0
+      '@angular/common': ^16.0.0
+      '@angular/core': ^16.0.0
+      '@angular/forms': ^16.0.0
+      rxjs: ^6.0.0 || ^7.8.1
+      zone.js: ~0.13.0
     dependencies:
       '@angular/common': 16.1.8(@angular/core@16.1.8)(rxjs@7.5.0)
       '@angular/core': 16.1.8(rxjs@7.5.0)(zone.js@0.13.1)
       '@angular/forms': 16.1.8(@angular/common@16.1.8)(@angular/core@16.1.8)(@angular/platform-browser@16.1.8)(rxjs@7.5.0)
       rxjs: 7.5.0
-      tslib: 2.4.1
+      tslib: 2.5.3
       zone.js: 0.13.1
     dev: false
 
@@ -6426,7 +6426,6 @@ packages:
 
   /tslib@2.5.3:
     resolution: {integrity: sha512-mSxlJJwl3BMEQCUNnxXBU9jP4JBktcEGhURcPR6VQVlnP0FdDEsIaz0C35dXNGLyRfrATNofF0F5p2KPxQgB+w==}
-    dev: true
 
   /tuf-js@1.1.7:
     resolution: {integrity: sha512-i3P9Kgw3ytjELUfpuKVDNBJvk4u5bXL6gskv572mcevPbSKCV3zt3djhmlEQ65yERjIbOSncy7U4cQJaB1CBCg==}
