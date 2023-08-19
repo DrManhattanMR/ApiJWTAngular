@@ -38,6 +38,7 @@ ngOnInit() {
         if (err.error.status==401){
           this.globales.ShowToast('error','😕Error!', 'Verifica tus Credenciales');
         }
+        this.globales.ShowToast('error','😕Error!',err.error.resultado)
         console.log(err);
       },
       complete: () => {

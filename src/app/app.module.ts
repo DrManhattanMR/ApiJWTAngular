@@ -11,7 +11,7 @@ import {CardModule} from "primeng/card";
 import {FormsModule} from "@angular/forms";
 import {HTTP_INTERCEPTORS,HttpClientModule} from "@angular/common/http";
 import {AuthInterceptorService} from "./services/auth-interceptor.service";
-import {MessageService} from "primeng/api";
+import {ConfirmationService, MessageService} from "primeng/api";
 import {FileUploadModule} from "primeng/fileupload";
 import {ToastModule} from "primeng/toast";
 import {BrowserAnimationsModule} from "@angular/platform-browser/animations";
@@ -19,6 +19,11 @@ import { NavbarComponent } from './components/navbar/navbar.component';
 import { RolesComponent } from './components/roles/roles.component';
 import { UsuariosComponent } from './components/usuarios/usuarios.component';
 import {TableModule} from "primeng/table";
+import {DialogModule} from "primeng/dialog";
+import {InputSwitchModule} from "primeng/inputswitch";
+import {TagModule} from "primeng/tag";
+import {ConfirmDialogModule} from "primeng/confirmdialog";
+import {DropdownModule} from "primeng/dropdown";
 
 //Primeng components
 
@@ -42,10 +47,16 @@ import {TableModule} from "primeng/table";
     HttpClientModule,
     FileUploadModule,
     ToastModule,
-    TableModule
+    TableModule,
+    DialogModule,
+    InputSwitchModule,
+    TagModule,
+    ConfirmDialogModule,
+    DropdownModule
   ],
   providers: [
     MessageService,
+    ConfirmationService,
     {
       provide: HTTP_INTERCEPTORS,
       useClass: AuthInterceptorService,
